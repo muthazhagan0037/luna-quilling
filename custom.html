@@ -1,0 +1,13 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Request a personalised handmade quilling artwork from Luna Quilling."><title>Custom Artwork | Luna Quilling</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css"><script src="config.js"></script><script defer src="script.js"></script></head>
+<body><div id="site-header"></div><main>
+<section class="page-hero"><p class="eyebrow">PERSONALISED ART</p><h1>Custom Artwork</h1><p>Have a name, portrait, flower, quote, memory or idea in mind? Tell Rathana what you imagine and we'll discuss the possibilities.</p></section>
+<section class="section form-layout"><div class="form-intro"><h2>Tell us about your idea</h2><p>You don't need to know exactly what is possible. Share what you have in mind and any reference image that helps.</p><ul class="feature-list"><li>Handmade to your requirements</li><li>Delivery available across India</li><li>Enquiry first — no online payment required</li></ul></div>
+<form id="custom-form" class="enquiry-form" enctype="multipart/form-data"><input type="hidden" name="source" value="Website"><input type="hidden" name="enquiryType" value="Custom Artwork"><input class="honeypot" name="website" tabindex="-1" autocomplete="off">
+<label>Name *<input name="name" required maxlength="100"></label><label>Phone *<input name="phone" required inputmode="tel" maxlength="20"></label><label>Email<input name="email" type="email" maxlength="150"></label>
+<label>Reference image <span class="muted">(optional, max 5 MB)</span><input id="custom-reference" name="referenceImage" type="file" accept="image/jpeg,image/png,image/webp,image/heic"></label>
+<label>What would you like? *<textarea name="requirements" required maxlength="3000" rows="6"></textarea></label><label>Size<input name="size" maxlength="100" placeholder="e.g. A4, 12 × 18 inches"></label><label>Budget<input name="budget" maxlength="100" placeholder="e.g. ₹2,000–₹3,000"></label><label>Additional requirements<textarea name="additionalRequirements" maxlength="2000" rows="4"></textarea></label>
+<button class="btn btn-primary" type="submit">Send Custom Enquiry</button><div id="custom-status" class="form-status" role="status"></div></form></section></main><div id="site-footer"></div></body></html>

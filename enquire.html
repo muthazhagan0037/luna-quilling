@@ -1,0 +1,10 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Artwork Enquiry | Luna Quilling</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css"><script src="config.js"></script><script defer src="script.js"></script></head>
+<body><div id="site-header"></div><main><section class="page-hero"><p class="eyebrow">READY TO DISCUSS?</p><h1>Artwork Enquiry</h1><p>Tell us which existing piece you're interested in and we'll discuss size, final price and delivery.</p></section>
+<section class="section form-layout"><div class="form-intro"><h2>Enquire about an artwork</h2><p>Starting prices are guides. Final pricing is confirmed directly with you.</p></div>
+<form id="artwork-enquiry-form" class="enquiry-form"><input type="hidden" name="source" value="Website"><input type="hidden" name="enquiryType" value="Existing Artwork"><input class="honeypot" name="website" tabindex="-1" autocomplete="off">
+<label>Name *<input name="name" required maxlength="100"></label><label>Phone *<input name="phone" required inputmode="tel" maxlength="20"></label><label>Email<input name="email" type="email" maxlength="150"></label>
+<label>Selected artwork *<select id="selected-artwork" name="artwork" required><option value="">Choose an artwork…</option></select></label><label>Size<input name="size" maxlength="100"></label><label>Budget<input name="budget" maxlength="100"></label><label>Message / requirements<textarea name="requirements" required maxlength="3000" rows="6"></textarea></label>
+<button class="btn btn-primary" type="submit">Send Enquiry</button><div id="artwork-status" class="form-status" role="status"></div></form></section></main><div id="site-footer"></div></body></html>
